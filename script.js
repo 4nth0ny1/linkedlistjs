@@ -32,3 +32,14 @@ LinkedList.prototype.add = function(_content){
     this.length++;
     return node;
 }
+
+LinkedList.prototype.print = function(){
+    if (this.head == null) return "empty list";
+    var s = "";
+    var node = this.head;
+    while(node != null){
+        s += node.content + "   ";
+        node = node.next;
+    }
+    return s;
+}
