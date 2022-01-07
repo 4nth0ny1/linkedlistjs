@@ -43,3 +43,10 @@ LinkedList.prototype.print = function(){
     }
     return s;
 }
+
+var aList = new LinkedList();
+function addNode(){
+    var c = document.getElementById('v').value
+    aList.add(c);
+    document.getElementById('output').innerHTML = aList.print();
+}
